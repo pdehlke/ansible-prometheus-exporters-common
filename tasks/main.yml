@@ -4,6 +4,7 @@
   package:
     name: "{{ item }}"
     state: present
+    lock_timeout: 300
   with_items:
     - curl
     - tar
